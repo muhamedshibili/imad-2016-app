@@ -37,7 +37,7 @@ var articles = {
     date: 'sep 7,2016',
     content:
         `<p>
-              this is the content for my third article.
+              this is the content for my second article.
         </p>`}
 
 };
@@ -78,17 +78,18 @@ function createtemplate (data) {
     </html>`;
      return htmltemplate
     
-}
+};
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/articleName' ,function (req,res) {
-    //articleName == article-one
-    //articles[articleName] == {} content object for article one
-    var articleName = req.params.articleName;
+app.get('/:articleName' ,function (req,res) {
+   //articleName == article-one
+   //articles[articleName] == {} content object for article one
+   var articleName = req.params.articleName;
     res.send(createtemplate(articles[articleName]));
 });
+
 
 
 app.get('/ui/style.css', function (req, res) {
