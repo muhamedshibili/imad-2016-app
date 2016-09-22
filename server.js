@@ -24,7 +24,7 @@ var articles = {
 },
     'article-two': {
      title: 'Article Two - Muhamed Shibili',
-    heading: 'Article one',
+    heading: 'Article two',
     date: 'sep 6,2016',
     content:
         `<p>
@@ -37,7 +37,7 @@ var articles = {
     date: 'sep 7,2016',
     content:
         `<p>
-              this is the content for my second article.
+              this is the content for my third article.
         </p>`}
 
 };
