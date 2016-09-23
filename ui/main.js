@@ -3,8 +3,15 @@ console.log('Loaded!');
 var element = document.getElementById('main-text')
 ;
 element.innerHTML = 'New value';
+
 //move the image
 var img= document.getElementById('madi');
+var marginLeft =0;
+function moveRIGHT () {
+marginLeft = marginLeft + 10;
+img.style.marginLeft = 'px';  
+}
 img.onclick = function ()  {
-  img.style.marginLeft = '100px';  
+var    interval =setInterval(moveRight, 50);
+  
 };
