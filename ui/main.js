@@ -1,10 +1,10 @@
-//counter code
+// Counter code
 var button = document.getElementById('counter');
 
 button.onclick = function () {
     
-    // create a request object
-    var request = new XMLHttpRequest()};
+    // Create a request object
+    var request = new XMLHttpRequest();
    
    
     // Capture the response and store it in a variable
@@ -25,8 +25,8 @@ button.onclick = function () {
     
     
     // Make the request
-    request.open('GET', "http://muhamedshibili.imad.hasura-app.io/counter",true);
+    request.open('GET', 'http://muhamedshibili.imad.hasura-app.io/counter',true);
     request.send(null);
-};    
-   
+
+};   
    
