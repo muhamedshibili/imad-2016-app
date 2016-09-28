@@ -2,7 +2,7 @@
 var button = document.getElementById('counter');
 button.onclick = function () {
     
-    // make arequest to the counter endpoint
+    // make a request to the counter endpoint
     
     // capture the request and store it in a variable
     
