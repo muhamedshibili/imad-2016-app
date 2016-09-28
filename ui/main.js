@@ -20,13 +20,13 @@ button.onclick = function () {
          }
 
 
-    //not done yet
+    // not done yet
     };
     
     
     // make the request
     request.open('GET', 'http://muhamedshibili.imad.hasura-app.io/counter',true);
     request.send(null);
-    
+};    
    
    
