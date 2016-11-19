@@ -8,7 +8,7 @@ var config = {
   user: 'muhamedshibili',
   password: process.env.DB_PASSWORD,
   port: '5432',
-  database: 'muhameshibili'
+  database: 'muhamedshibili'
 };
 
 var app = express();
