@@ -15,41 +15,7 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var articles = { 
-    'article-one' :{
-    title: 'Article One - Muhamed Shibili',
-    heading: 'Article one',
-    date: 'sep 2,2016',
-    content:
-        `<p>
-              This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
-        </p> 
-        <p>
-               This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
-        </p>
-        <p>
-               This is the content for my first article.This is the content for my first article.This is the content for my first article.This is the content for my first article.
-        </p>`
-},
-    'article-two': {
-     title: 'Article Two - Muhamed Shibili',
-    heading: 'Article two',
-    date: 'sep 6,2016',
-    content:
-        `<p>
-              This is the content for my second article.
-        </p>`
-        
-    },
-    'article-three' : { title: 'Article Three - Muhamed Shibili',
-    heading: 'Article Three',
-    date: 'sep 7,2016',
-    content:
-        `<p>
-              this is the content for my third article.
-        </p>`}
 
-};
 
 function createtemplate (data) {
   var title= data.title;
@@ -92,6 +58,7 @@ function createtemplate (data) {
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 }); 
+
 
 var pool = new Pool(config);
 app.get('/test-db' , function (req, res) {
@@ -142,10 +109,9 @@ app.get('/articles/:articleName' ,function (req,res) {
                 var articleData = result.rows[0];
                 res.send(createTemplate(articleData));
             }
-        }    
+        }
         
     });
-   
 });
 
 
