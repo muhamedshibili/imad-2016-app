@@ -19,7 +19,7 @@ var articles = {
     'article-one': {
       title: 'Article One | Tanmai Gopal',
       heading: 'Article One',
-      date: 'Sep 5, 2016',
+      date: 'nov 1, 2016',
       content: `
           <p>
               This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. 
