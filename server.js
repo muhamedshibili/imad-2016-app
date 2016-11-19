@@ -128,7 +128,7 @@ app.get('/submit-name' , function(req, res) { //URL: /submit-name?name=xxxxx
 app.get('/articles/:articleName' ,function (req,res) {
    //articleName == article-one
    //articles[articleName] == {} content object for article one
-   var articleName = req.params.articleName;
+  
    
    
    // SELECT * FROM article where title = 'article-one'
