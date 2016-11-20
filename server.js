@@ -41,7 +41,7 @@ var articles = {
           </p>`
     },
     'article-three': {
-      title: 'Article Three | Tanmai Gopal',
+      title: 'Article Three | muhamed shibili ',
       heading: 'Article Three',
       date: 'Sep 15, 2016',
       content: `
